@@ -9,6 +9,26 @@
             This Controller Intacts with Book Store Author Data Base
             </summary>
         </member>
+        <member name="M:BookStore_API.Controllers.AuthorsController.GetAuthors">
+            <summary>
+            For getting list of author
+            </summary>
+            <returns> List of author</returns>
+        </member>
+        <member name="M:BookStore_API.Controllers.AuthorsController.GetAuthor(System.Int32)">
+            <summary>
+            get author detail by id
+            </summary>
+            <param name="id"></param>
+            <returns>author record data</returns>
+        </member>
+        <member name="M:BookStore_API.Controllers.AuthorsController.Create(BookStore_API.Data.DTOs.AuthorCreateDTO)">
+            <summary>
+            For Creating new Author
+            </summary>
+            <param name="AuthorDTO"></param>
+            <returns></returns>
+        </member>
         <member name="M:BookStore_API.Controllers.HomeController.Get">
             <summary>
             Get API Home Page
