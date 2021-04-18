@@ -38,6 +38,11 @@ namespace BookStore_API
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
+            services.AddCors(c => {
+                c.AddPolicy("CORSPolicy", builder => 
+                builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+                });
+
             services.AddSwaggerGen(c=> {
                 c.SwaggerDoc("v1", new OpenApiInfo() {
                     Title = "Book Store APIs",
@@ -78,7 +83,9 @@ namespace BookStore_API
             });
 
             app.UseHttpsRedirection();
-            //app.UseStaticFiles(); It required for js and html(wwwroot)
+
+            app.UseCors("CORSPolicy");
+
 
             app.UseRouting();
 
