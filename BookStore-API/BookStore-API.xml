@@ -4,6 +4,11 @@
         <name>BookStore-API</name>
     </assembly>
     <members>
+        <member name="T:BookStore_API.Controllers.AuthorsController">
+            <summary>
+            This Controller Intacts with Book Store Author Data Base
+            </summary>
+        </member>
         <member name="M:BookStore_API.Controllers.HomeController.Get">
             <summary>
             Get API Home Page
