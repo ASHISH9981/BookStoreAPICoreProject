@@ -12,10 +12,12 @@ namespace BookStore_API.Contracts
 
         Task<T> FindById(int id);
 
-        Task<bool> Update(Author entity);
+        Task<bool> Update(T entity);
         Task<bool> Save();
-        Task<bool> Delete(Author entity);
-        Task<bool> Create(Author entity);
+        Task<bool> Delete(T entity);
+        Task<bool> Create(T entity);
+        Task<bool> isExists(int id);
+
 
     }
 }
