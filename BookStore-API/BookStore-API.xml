@@ -37,6 +37,39 @@
             <param name="AuthorDTO"></param>
             <returns></returns>
         </member>
+        <member name="T:BookStore_API.Controllers.BooksController">
+            <summary>
+            Book table contact
+            </summary>
+        </member>
+        <member name="M:BookStore_API.Controllers.BooksController.GetBooks">
+            <summary>
+            For getting list of author
+            </summary>
+            <returns> List of author</returns>
+        </member>
+        <member name="M:BookStore_API.Controllers.BooksController.GetBook(System.Int32)">
+            <summary>
+            get book detail by id
+            </summary>
+            <param name="id"></param>
+            <returns>book record data</returns>
+        </member>
+        <member name="M:BookStore_API.Controllers.BooksController.Create(BookStore_API.Data.DTOs.BookCreateDTO)">
+            <summary>
+            For Creating new Book
+            </summary>
+            <param name="bookDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BookStore_API.Controllers.BooksController.Update(System.Int32,BookStore_API.Data.DTOs.BookUpdateDTO)">
+            <summary>
+            Update book
+            </summary>
+            <param name="id"></param>
+            <param name="BookDTO"></param>
+            <returns></returns>
+        </member>
         <member name="M:BookStore_API.Controllers.HomeController.Get">
             <summary>
             Get API Home Page

@@ -30,8 +30,8 @@ namespace BookStore_API.Services
 
         public async Task<IList<Book>> FindAll()
         {
-            var authors = await _db.Books.ToListAsync();
-            return authors;
+            var books = await _db.Books.ToListAsync();
+            return books;
         }
 
         public async Task<Book> FindById(int id)
