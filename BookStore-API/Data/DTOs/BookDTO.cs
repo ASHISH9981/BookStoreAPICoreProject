@@ -22,7 +22,6 @@ namespace BookStore_API.Data.DTOs
 
     public class BookCreateDTO
     {
-        public int Id { get; set; }
         [Required]
         public string Title { get; set; }
         public int? Year { get; set; }
